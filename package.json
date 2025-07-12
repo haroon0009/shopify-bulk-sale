@@ -9,7 +9,11 @@
     "dev": "shopify app dev",
     "info": "shopify app info",
     "generate": "shopify app generate",
-    "deploy": "shopify app deploy"
+    "deploy": "shopify app deploy",
+    "install-all": "npm install && cd web && npm install && cd frontend && npm install",
+    "delete-all": "rm -rf node_modules && rm package-lock.json && cd web && rm -rf node_modules && rm package-lock.json && cd frontend && rm -rf node_modules && rm package-lock.json",
+    "start": "cd web && npm run serve",
+    "dev:serve": "cd web && npm run dev"
   },
   "dependencies": {
     "@shopify/app": "^3.0.0",
